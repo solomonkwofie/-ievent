@@ -7,9 +7,6 @@ class Login extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.yellow[700],
-      appBar: AppBar(
-        title: Text('Login'),
-      ),
       body: ListView(
         children: [
           const SizedBox(
