@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ieventapp/homepage.dart';
+import 'package:ieventapp/main.dart';
 
 class Login extends StatelessWidget {
   const Login({Key? key}) : super(key: key);
@@ -59,7 +61,12 @@ class Login extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20.0),
                 color: Colors.redAccent,
               ),
-              child: TextButton(onPressed: () {}, child: const Text('Sign Up')),
+              child: TextButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => const HomePage()));
+                  },
+                  child: const Text('Sign In')),
             ),
           ),
           const SizedBox(
